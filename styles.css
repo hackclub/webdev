@@ -176,6 +176,13 @@ p, h2 {
 .box-btn:hover {
     background: #ff477e;
 }
+.box-btn-white {
+    background: #ffffff; 
+    color: #c70014;
+}
+.box-btn-white:hover {
+    background: #c8c8c8;
+}
 .box-img {
     width: 80px;
     height: 80px;
