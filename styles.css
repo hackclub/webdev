@@ -334,30 +334,31 @@ h2 {
 }  
 /* Unrealesed Box from cad.hackclub.com */
 
-.box.unreleased-box[style*='enclosure'] {
+.box.ended-box[style*='enclosure'] {
     --box-bg: #c10007 !important;
     --box-title: #ffdf20 !important;
     --box-desc: white !important;
 }
-/* Greyscale unreleased boxes */
-.unreleased-box {
+/* Greyscale ended boxes */
+.ended-box {
     filter: grayscale(1) brightness(1.1) opacity(0.7) !important;
     pointer-events: none;
 }
-/* Unreleased (greyed out) styles */
-.unreleased,
-.unreleased-btn {
+/* ended (greyed out) styles */
+.ended,
+.ended-btn {
     filter: grayscale(1) brightness(1.2) opacity(0.6);
     pointer-events: none;
 }
-.unreleased-btn {
+.ended-btn {
     background: #bbb !important;
     color: #fff !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
     border: none !important;
 }
-.unreleased-note {
+/* ended box styles */
+.ended-note {
     background: #f3f3f3;
     border-left: 6px solid #888;
     border-radius: 12px;
@@ -368,16 +369,17 @@ h2 {
     color: #444;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-.unreleased-note h2 {
+.ended-note h2 {
     color: #ec3750;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.unreleased-note p {
+.ended-note p {
     font-size: 1.1rem;
     margin: 0;
 }
+
 .footer a:hover {
     color: var(--hc-red);
 }
