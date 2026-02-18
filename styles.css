@@ -183,6 +183,9 @@ p, h2 {
 .box-btn-white:hover {
     background: #c8c8c8;
 }
+.box-btn-flavorless {
+    margin-left: 2rem;
+}
 .box-img {
     width: 80px;
     height: 80px;
