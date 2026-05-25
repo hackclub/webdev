@@ -218,7 +218,7 @@ h1 {
   align-self: flex-start;
 }
 
-.price-tag,
+.reward-tag,
 .sticker-note {
   display: inline-flex;
   align-items: center;
@@ -231,7 +231,7 @@ h1 {
   letter-spacing: 0.01em;
   white-space: nowrap;
   background: rgba(236, 55, 79, 0.237);
-  color: var(--brand);
+  color: #fff;
 }
 
 .sticker-note {
