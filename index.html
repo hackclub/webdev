@@ -1,200 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev Series</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" href="favicon.svg" type="image/svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hack Club: Web Dev Series</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-    <div class="header">
-        <h1>Hack Club: Web Dev Series</h1>
-        <p class="header-desc">Learn web development through fun, hands-on projects and earn delicious rewards along the way!</p>
-    </div>
+  <a class="brand-banner" href="https://hackclub.com/" target="_blank" rel="noreferrer">
+    <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" />
+  </a>
 
-    <a class="banner" href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 128px; z-index: 1000;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Hack Club workshops</p>
+      <h1>Web Dev Series</h1>
+      <p class="hero-copy">Learn web development through hands-on projects, level up your skills, and get rewarded for making something real instead of another half-finished tutorial graveyard.</p>
+    </header>
 
-    <div class="container-wrapper">
-        <div class="box" style="--box-bg: #C76B0F; --box-title: #F6D193; --box-desc: #F6D193;">
-            <img class="box-img" src="./imgs/boba.png" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Start here: Boba Drops</div>
-                <div class="box-desc"><strong>Build a website using HTML and CSS, get free boba!</strong></div>
-                <div class="box-desc">Estimated time: 30-60 minutes</div>
-                <div class="price-tag">$5</div>
-            </div>
-            <a href="https://boba.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/t/5r7VGppu9wus"><button class="box-btn">run a workshop!</button></a>
+    <section class="timeline" aria-label="Web development workshop roadmap">
+      <article class="card card-start" style="--card-bg: #C76B0F; --card-accent: #F6D193; --card-text: #FFF6E2;">
+        <img class="card-media" src="./imgs/boba.png" alt="Boba Drops illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Start here</p>
+            <h2 class="card-title">Boba Drops</h2>
+            <p class="card-copy"><strong>Build a website using HTML and CSS, get free boba!</strong></p>
+            <p class="card-meta">Estimated time: 30-60 minutes</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$5</span>
+          </div>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">to continue, do...</div>
-        <div class="box" style="--box-bg: #fde09d; --box-title: #b875ff; --box-desc: #5d5031;">
-            <img class="box-img" src="./imgs/swirl.svg" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Continue here: Swirl</div>
-                <div class="box-desc"><strong>Build an even cooler website with HTML and CSS, with a unique feature like a favicon, and get free ice cream!</strong></div>
-                <div class="box-desc">Estimated time: 1-2 hours</div>
-                <div class="price-tag">$5-9</div>
-            </div>
-            <a href="https://swirl.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/swirl-workshop"><button class="box-btn">run a workshop!</button></a>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://boba.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/t/5r7VGppu9wus" target="_blank" rel="noreferrer">Run a workshop</a>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">or, you can do...</div>
-        <div class="box" style="--box-bg: #ffcc00; --box-title: #000; --box-desc: #000;">
-            <img class="box-img" src="./imgs/toppings.png" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Toppings</div>
-                <div class="box-desc"><strong>Add some extra flavor to your website, with CSS and get toppings for your ice cream or boba!</strong></div>
-                <div class="box-desc">Estimated time: 30-60 minutes</div>
-                <div class="price-tag">$5</div>
-            </div>
-            <a href="https://toppings.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/toppings-workshop"><button class="box-btn">run a workshop!</button></a>
+      </article>
+
+      <div class="connector"><span>↓</span><p>to continue, do this</p></div>
+
+      <article class="card" style="--card-bg: #fde09d; --card-accent: #b875ff; --card-text: #5d5031;">
+        <img class="card-media" src="./imgs/swirl.svg" alt="Swirl illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Continue here</p>
+            <h2 class="card-title">Swirl</h2>
+            <p class="card-copy"><strong>Build an even cooler website with HTML and CSS, add a unique feature like a favicon, and get free ice cream!</strong></p>
+            <p class="card-meta">Estimated time: 1-2 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$5-9</span>
+          </div>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">if you want to focus on HTML & start learning JS, do...</div>
-        <div class="box" style="--box-bg: #ffffff; --box-title: #000000; --box-desc: #000000;">
-            <img class="box-img" src="./imgs/flavorless.png" style="height: auto;" alt="Flavorless logo" />
-            <div class="box-content">
-                <div class="box-title">Flavorless</div>
-                <div class="box-desc"><strong>Build a website using only HTML and JavaScript! No <s>CSS</s> allowed!</strong></div>
-                <div class="box-desc">Estimated time: 1 hour</div>
-                <div><strong>get a sticker sheet</strong></div>
-            </div>
-            <a href="https://flavorless.hackclub.com/?utm_source=webdev"><button class="box-btn-flavorless">check it out!</button></a>
-            <a href="https://forms.hackclub.com/flavorless-workshop"><button class="box-btn-flavorless">run a workshop!</button></a>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://swirl.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/swirl-workshop" target="_blank" rel="noreferrer">Run a workshop</a>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">if you wanna learn JavaScript and strengthen your other skills, do...</div>
-        <div class="box" style="--box-bg: #f8b84f; --box-title: #715547; --box-desc: #000;">
-            <img class="box-img" src="./imgs/waffles.jpg" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Waffles</div>
-                <div class="box-desc"><strong>Make a website that uses JavaScript, and get free waffles!</strong></div>
-                <div class="box-desc">Estimated time: 2 hours</div>
-                <div class="price-tag">$10</div>
-            </div>
-            <a href="https://waffles.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/waffles-workshop"><button class="box-btn">run a workshop!</button></a>
+      </article>
+
+      <div class="connector"><span>↓</span><p>or choose a different path</p></div>
+
+      <article class="card" style="--card-bg: #ffcc00; --card-accent: #111; --card-text: #1a1a1a;">
+        <img class="card-media" src="./imgs/toppings.png" alt="Toppings illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Alternate track</p>
+            <h2 class="card-title">Toppings</h2>
+            <p class="card-copy"><strong>Add some extra flavor to your website with CSS and get toppings for your ice cream or boba!</strong></p>
+            <p class="card-meta">Estimated time: 30-60 minutes</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$5</span>
+          </div>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">and if you want to discover CSS frameworks, try doing...</div>
-        <div class="box" style="--box-bg: #c10007; --box-title: #ffdf20; --box-desc: white;">
-            <img class="box-img" src="./imgs/grub.png" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Grub</div>
-                <div class="box-desc"><strong>Build a website using the Tailwind CSS framework, and get free junk food!</strong></div>
-                <div class="box-desc">Estimated time: 1-2 hours</div>
-                <div class="price-tag">$6-10</div>
-            </div>
-            <a href="https://grub.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/grubworkshop"><button class="box-btn">run a workshop!</button></a>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://toppings.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/toppings-workshop" target="_blank" rel="noreferrer">Run a workshop</a>
         </div>
-         <div class="arrow">↓</div>
-        <div class="flow-indicator">if you wanna learn a modern web development framework, do...</div>
-        <div class="box" style="--box-bg: #112a4f; --box-title: #61DBFB; --box-desc: #ffffff;">
-            <img class="box-img" src="./imgs/reactive.png" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Reactive</div>
-                <div class="box-desc"><strong>Make a website using the React framework, and get a free domain to host it!</strong></div>
-                <div class="box-desc">Estimated time: 3 hours</div>
-                <div class="price-tag">$15</div>
-            </div>
-            <a href="https://reactive.hackclub.dev"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/reactive-workshop"><button class="box-btn">run a workshop!</button></a>
+      </article>
+
+      <div class="connector"><span>↓</span><p>if you want HTML plus JavaScript</p></div>
+
+      <article class="card" style="--card-bg: #ffffff; --card-accent: #111; --card-text: #111;">
+        <img class="card-media card-media-contain" src="./imgs/flavorless.png" alt="Flavorless logo" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">JavaScript starter</p>
+            <h2 class="card-title">Flavorless</h2>
+            <p class="card-copy"><strong>Build a website using only HTML and JavaScript. No <s>CSS</s> allowed.</strong></p>
+            <p class="card-meta">Estimated time: 1 hour</p>
+          </div>
+          <div class="card-badges">
+            <span class="sticker-note">Get a sticker sheet</span>
+          </div>
         </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">if you want to go 3D, do...</div>
-        <div class="box" style="--box-bg: #c70014; --box-title: #ffffff; --box-desc: #ffffff;">
-          <img class="box-img" style="height: auto;" src="./imgs/polygon.png" alt="Box Image" />
-    <div class="box-content">
-          <div class="box-title">Polygon</div>
-            <div class="box-desc"><strong>Build a 3d website using three.js and get a grant to go watch your favourite movies!</strong></div>
-            <div class="box-desc">Estimated time: 1-4 hours</div>
-            <div class="price-tag">$10-20</div>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://flavorless.hackclub.com/?utm_source=webdev" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/flavorless-workshop" target="_blank" rel="noreferrer">Run a workshop</a>
         </div>
-        <a href="https://polygon.hackclub.com/"><button class="box-btn box-btn-white">check it out!</button></a>
-       <a href="https://forms.hackclub.com/t/nGoLApvXMDus"><button class="box-btn box-btn-white">run a workshop!</button></a>
+      </article>
+
+      <div class="connector"><span>↓</span><p>if you want more JavaScript</p></div>
+
+      <article class="card" style="--card-bg: #f8b84f; --card-accent: #715547; --card-text: #1a1a1a;">
+        <img class="card-media" src="./imgs/waffles.jpg" alt="Waffles illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">JavaScript practice</p>
+            <h2 class="card-title">Waffles</h2>
+            <p class="card-copy"><strong>Make a website that uses JavaScript, and get free waffles!</strong></p>
+            <p class="card-meta">Estimated time: 2 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$10</span>
+          </div>
+        </div>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://waffles.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/waffles-workshop" target="_blank" rel="noreferrer">Run a workshop</a>
+        </div>
+      </article>
+
+      <div class="connector"><span>↓</span><p>if you want a CSS framework</p></div>
+
+      <article class="card" style="--card-bg: #c10007; --card-accent: #ffdf20; --card-text: #fff;">
+        <img class="card-media" src="./imgs/grub.png" alt="Grub illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Framework track</p>
+            <h2 class="card-title">Grub</h2>
+            <p class="card-copy"><strong>Build a website using the Tailwind CSS framework, and get free junk food!</strong></p>
+            <p class="card-meta">Estimated time: 1-2 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$6-10</span>
+          </div>
+        </div>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://grub.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/grubworkshop" target="_blank" rel="noreferrer">Run a workshop</a>
+        </div>
+      </article>
+
+      <div class="connector"><span>↓</span><p>if you want a modern framework</p></div>
+
+      <article class="card" style="--card-bg: #112a4f; --card-accent: #61DBFB; --card-text: #fff;">
+        <img class="card-media" src="./imgs/reactive.png" alt="Reactive illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">React</p>
+            <h2 class="card-title">Reactive</h2>
+            <p class="card-copy"><strong>Make a website using the React framework, and get a free domain to host it!</strong></p>
+            <p class="card-meta">Estimated time: 3 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$15</span>
+          </div>
+        </div>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://reactive.hackclub.dev" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/reactive-workshop" target="_blank" rel="noreferrer">Run a workshop</a>
+        </div>
+      </article>
+
+      <div class="connector"><span>↓</span><p>if you want backend</p></div>
+
+      <article class="card" style="--card-bg: #4E9CDB; --card-accent: #fff; --card-text: #fff;">
+        <img class="card-media" src="./imgs/slushies.png" alt="Slushies illustration" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Backend track</p>
+            <h2 class="card-title">Slushies</h2>
+            <p class="card-copy"><strong>Make a web app using the Flask backend framework, and get a slushie or any food item!</strong></p>
+            <p class="card-meta">Estimated time: 1-3 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$5-10</span>
+          </div>
+        </div>
+        <div class="card-actions">
+          <a class="button button-primary" href="https://slushies.hackclub.com" target="_blank" rel="noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/t/7NNfphNi8sus" target="_blank" rel="noreferrer">Run a workshop</a>
+        </div>
+      </article>
+      <div class="connector"><span>↓</span><p>3D track</p></div>
+
+      <article class="card" style="--card-bg: #c70014; --card-accent: #fff; --card-text: #fff;">
+        <img class="card-media card-media-contain" src="./imgs/polygon.png" alt="Polygon illustration" />
+      
+        <div class="card-body">
+          <div>
+            <p class="card-label">3D track</p>
+            <h2 class="card-title">Polygon</h2>
+            <p class="card-copy"><strong>Build a 3D website using three.js and get a grant to go watch your favourite movies!</strong></p>
+            <p class="card-meta">Estimated time: 1-4 hours</p>
+          </div>
+      
+          <div class="card-badges">
+            <span class="reward-tag">$10-20</span>
+          </div>
+        </div>
+      
+        <div class="card-actions">
+          <a class="button button-primary" href="https://polygon.hackclub.com" target="_blank" rel="noopener noreferrer">Check it out</a>
+          <a class="button button-secondary" href="https://forms.hackclub.com/t/nGoLApvXMDus" target="_blank" rel="noopener noreferrer">Run a workshop</a>
+        </div>
+      </article>
+
+      <div class="notice">
+        <h3>Old events</h3>
+        <p><strong>Zoo, Boba Olympics</strong> are currently not running. Stay tuned for updates about Zoo, Boba Olympics.</p>
       </div>
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">if you wanna learn some backend with Flask do...</div>
-        <div class="box" style="--box-bg: #4E9CDB; --box-title: #ffffff; --box-desc: #ffffff;">
-            <img class="box-img" src="./imgs/slushies.png" alt="Box Image" />
-            <div class="box-content">
-                <div class="box-title">Slushies</div>
-                <div class="box-desc"><strong>Make a web app using the Flask backend framework, and get a slushie or any food item!</strong></div>
-                <div class="box-desc">Estimated time: 1-3 hours</div>
-                <div class="price-tag">$5-10</div>
-            </div>
-            <a href="https://slushies.hackclub.com"><button class="box-btn">check it out!</button></a>
-            <a href="https://forms.hackclub.com/t/7NNfphNi8sus"><button class="box-btn">run a workshop!</button></a>
-        </div>
 
-        <div class="fulfillment-section">
-            <div class="ended-note">
-                <h2>Old Events!</h2>
-                <p><strong>Zoo, Boba Olympics and Polygon</strong> are currently not running. Stay tuned for updates about Zoo, Boba Olympics and Polygon V2.</p>
-            </div>
+      <div class="connector"><span>↓</span><p>these are paused for now</p></div>
+
+      <article class="card card-muted" style="--card-bg: #103D10; --card-accent: #408000; --card-text: #fff;">
+        <img class="card-media card-media-muted" src="./imgs/zoo.png" alt="Zoo logo" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Paused</p>
+            <h2 class="card-title">Zoo</h2>
+            <p class="card-copy"><strong>Make an animal-themed SvelteKit site, get plushies and stickers!</strong></p>
+            <p class="card-meta">Estimated time: 1-2 hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$10+</span>
+          </div>
         </div>
-         <div class="arrow">↓</div>
-        <div class="flow-indicator">why not take a trip to the zoo and learn SvelteKit, do...</div>
-        <div class="box ended-box" style="--box-bg: #103D10; --box-title: #408000; --box-desc: white;">
-            <img class="box-img ended" src="./imgs/zoo.png" alt="Zoo Logo">
-            <div class="box-content">
-                <div class="box-title">Zoo</div>
-                <div class="box-desc"><strong>Make an animal themed SvelteKit site, get plushies and stickers!</strong></div>
-                <div class="box-desc">Estimated time: 1-2 hours</div>
-                <div class="price-tag">$10+</div>
-            </div>
-            <a href="https://zoo.hackclub.com/"><button class="box-btn" disabled>check it out!</button></a>
-        </div> 
-        <div class="arrow">↓</div>
-        <div class="flow-indicator">if you wanna work as a team, do...</div>
-        <div class="box ended-box" style="--box-bg: #f9e0bc; --box-title: #c2680e; --box-desc: #714312;">
-            <img class="box-img ended" src="./imgs/boba-olympics.svg" alt="Boba Olympics logo" />
-            <div class="box-content">
-                <div class="box-title">Boba Olympics</div>
-                <div class="box-desc"><strong>Work as a team to build hand-made sites, win prizes!</strong></div>
-                <div class="box-desc">Estimated time: 2+ hours</div>
-                <div class="price-tag">$5-25</div>
-            </div>
-            <a href="https://olympics.hackclub.com/"><button class="box-btn" disabled>check it out!</button></a>
+        <div class="card-actions">
+          <span class="button button-disabled" aria-disabled="true">Check it out</span>
         </div>
-    </div>
-    <div class="fulfillment-section">
-        <h2>How do I receive my grant?</h2>
-        <div class="payment-methods">
-            <div class="payment-option">
-                <div class="payment-icon">🏦</div>
-                <div class="payment-content">
-                    <h4>HCB Organization</h4>
-                    <p>We transfer the money to your club's HCB organization.</p>
-                </div>
-            </div>
-            <div class="payment-option">
-                <div class="payment-icon">💳</div>
-                <div class="payment-content">
-                    <h4>Virtual card</h4>
-                    <p>We issue you a virtual card grant that you can use to do purchases online or in-person with Apple or Google Pay.</p>
-                </div>
-            </div>
-            <div class="payment-option">
-                <div class="payment-icon">📋</div>
-                <div class="payment-content">
-                    <h4>Reimbursement</h4>
-                    <p>Submit the receipts for purchases you've already made, and we'll reimburse you for the amount.</p>
-                </div>
-            </div>
-            <h3>Running a workshop?</h3>
-            <p>Want to run a workshop and get the We Ships that same day? Hack yeah! Just send a message in #leaders and we will help you!</p>
-            <h3>Club Levels</h3>
-            <p>All of these Workshops can help your club level up, see <a href="https://leaders.hackclub.com/my-club">the club leaders portal</a> for more information.</p>
+      </article>
+
+      <div class="connector"><span>↓</span><p>team mode</p></div>
+
+      <article class="card card-muted" style="--card-bg: #f9e0bc; --card-accent: #c2680e; --card-text: #714312;">
+        <img class="card-media card-media-muted" src="./imgs/boba-olympics.svg" alt="Boba Olympics logo" />
+        <div class="card-body">
+          <div>
+            <p class="card-label">Paused</p>
+            <h2 class="card-title">Boba Olympics</h2>
+            <p class="card-copy"><strong>Work as a team to build hand-made sites, win prizes!</strong></p>
+            <p class="card-meta">Estimated time: 2+ hours</p>
+          </div>
+          <div class="card-badges">
+            <span class="reward-tag">$5-25</span>
+          </div>
         </div>
-    </div>
-    <footer class="footer">
-        <p>Made with a whole bunch of Boba, Creemees with sprinkles, Hamburgers, Waffles, Popcorn and <i>a little more boba</i> by <a href="https://hackclub.com">Hack Club</a></p>
-    </footer>
+        <div class="card-actions">
+          <span class="button button-disabled" aria-disabled="true">Check it out</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="fulfillment" aria-labelledby="fulfillment-title">
+      <h2 id="fulfillment-title">How do I receive my grant?</h2>
+      <div class="fulfillment-grid">
+        <article class="fulfillment-item">
+          <div class="fulfillment-icon">🏦</div>
+          <div>
+            <h3>HCB Organization</h3>
+            <p>We transfer the money to your club's HCB organization.</p>
+          </div>
+        </article>
+        <article class="fulfillment-item">
+          <div class="fulfillment-icon">💳</div>
+          <div>
+            <h3>Virtual card</h3>
+            <p>We issue a virtual card grant you can use online or in person with Apple Pay or Google Pay.</p>
+          </div>
+        </article>
+        <article class="fulfillment-item">
+          <div class="fulfillment-icon">📋</div>
+          <div>
+            <h3>Reimbursement</h3>
+            <p>Submit receipts for purchases you've already made, and we'll reimburse you.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="fulfillment-note">
+        <h3>Running a workshop?</h3>
+        <p>Send a message in #leaders and we will help you get the We Ships that same day.</p>
+      </div>
+
+      <div class="fulfillment-note">
+        <h3>Club levels</h3>
+        <p>All of these workshops can help your club level up. See the <a href="https://leaders.hackclub.com/my-club" target="_blank" rel="noreferrer">club leaders portal</a> for more information.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with a ridiculous amount of Boba, Creemees with sprinkles, Hamburgers, Waffles, Popcorn, and a little more boba by <a href="https://hackclub.com" target="_blank" rel="noreferrer">Hack Club</a>.</p>
+  </footer>
 </body>
 </html>
