@@ -157,10 +157,14 @@ h1 {
 .card-media {
   width: 108px;
   height: 108px;
-  object-fit: cover;
-  border-radius: 20px;
+  object-fit: contain;
+  padding: 0.6rem;
+
   background: rgba(255, 255, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+
+  overflow: visible;
 }
 
 .card-media-contain {
@@ -171,6 +175,7 @@ h1 {
 
 .card-media-muted {
   filter: grayscale(1) saturate(0.4) opacity(0.72);
+  overflow: visible;
 }
 
 .card-body {
