@@ -77,8 +77,7 @@ a:hover {
 }
 
 .brand-banner {
-  position: fixed;
-  top: 1rem;
+  position: relative;
   left: 1rem;
   z-index: 30;
 }
