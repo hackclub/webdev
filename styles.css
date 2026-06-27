@@ -43,6 +43,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -77,8 +78,8 @@ a:hover {
 }
 
 .brand-banner {
-  position: relative;
-  left: 1rem;
+  width: fit-content;
+  margin-left: 1rem;
   z-index: 30;
 }
 
@@ -482,8 +483,8 @@ h1 {
   }
 
   .brand-banner {
-    top: 0.75rem;
-    left: 0.75rem;
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
   }
 
   .brand-banner img {
