@@ -78,8 +78,9 @@ a:hover {
 }
 
 .brand-banner {
+  display: block;
   width: fit-content;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   z-index: 30;
 }
 
@@ -436,12 +437,12 @@ h1 {
   color: var(--muted);
 }
 
-.footer a {
+a {
   color: var(--brand);
   font-weight: 700;
 }
 
-.footer a:hover,
+a:hover,
 .fulfillment-note a:hover {
   text-decoration: underline;
 }
